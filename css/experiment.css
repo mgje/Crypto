@@ -290,3 +290,8 @@ div#page h2, div#page h3 {
 	font-family: 'theSerif', georgia, times, serif; 
 	color: #2F7732;	
 }
+
+.table tbody>tr>td{
+	padding-left: 1px;
+    padding-right: 1px;
+}
