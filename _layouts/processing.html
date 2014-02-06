@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>{{ site.name }} | {{ page.title }}</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="data:image/vnd.microsoft.icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAABNTU0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAERERERERERERERAREQEREREBEBERARARERAQEAEBAREREQAREQARERAAAAAAAAABEREQARABEREREBAQAQEBEREQEBABAQEREREQARABEREQAAAAAAAAARERABERABERERAQEAEBARERARAREQEQEREREBERARERERERERERERH//wAA+98AANvbAADqVwAA888AAIABAAD5nwAA6lcAAOpXAAD5nwAAgAEAAPPPAADqVwAA29sAAPvfAAD//wAA" />
+  <link rel="stylesheet" href="{{ site.baseurl }}css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}css/spectrum.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}css/processing.css">
+  <script src="{{ site.baseurl }}js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body class="{{ page.class }}">
+  {% include topNavigation.html %}
+  <div id="blogContainer">
+      {{ content }}
+  </div>
+  <div id="rowContainer" class="container-fluid">
+    <div class="row-fluid">
+      <!-- <div class="span4"> -->
+        <div id="editorContainer">
+          <div id="colorPicker"></div> 
+          <div id="editor"></div>
+        </div>
+        <div id="editorCommands" class="btn-group">
+            <!--
+            <div class="btn-group dropup" id="resetButton" style="display: block;">
+              <button class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" data-hover="dropdown" data-delay="10"><span class="glyphicon glyphicon-flash"></span> Code
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#" id="resetExample" title="" data-original-title="Reset to Dan's example">Dan's Example Code</a></li>
+                <li><a href="#" id="resetLastLesson" title="" data-original-title="Reload my final code from the previous lesson">My Code from Last Lesson</a></li>
+                <li><a href="#" id="resetLastGood" title="" data-original-title="Reload code from the last successful run">Last Good Run</a></li>
+               </ul>
+             </div>
+             -->
+             <a id="runButton" class="btn btn-default btn-sm" >
+               <span class="glyphicon glyphicon-play"></span>
+              Run Code
+             </a>
+        </div>  
+      <!-- </div> -->
+      <!-- CANVAS -->
+      <!-- <div class="span6"> -->
+        <div id="canvasContainer">
+          <div id="editorCanvasBox">
+            <canvas id="editorCanvas"></canvas>
+            <div id="horizontalRuler"></div>
+            <div id="verticalRuler"></div>        
+            <a id="toggleRulers" class="btn btn-default btn-sm" >
+              <span class="glyphicon glyphicon-pencil"></span> Toggle Rulers
+            </a>
+          </div>
+        </div>
+      <!-- </div> -->
+    </div>
+  </div>
+
+  <script src="{{ site.baseurl }}js/vendor/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="{{ site.baseurl }}js/vendor/jquery-1.10.1.min.js"><\/script>')
+  </script>
+  <script src="{{ site.baseurl }}js/vendor/jquery-ui.min.js"></script>  
+  <script src="{{ site.baseurl }}js/vendor/bootstrap.min.js"></script>
+  <script src="{{ site.baseurl }}js/vendor/spectrum.js"></script>
+  <script src="{{ site.baseurl }}js/vendor/processing-1.4.1.js"></script>
+
+  <script src="{{ site.baseurl }}js/vendor/ace/ace.js"></script>
+  <script>
+  var Range = require("ace/range").Range;
+  </script>
+  <script src="{{ page.code }}"></script>
+  <script src="{{ site.baseurl }}js/processing.js"></script>
+</body>
+</html>    

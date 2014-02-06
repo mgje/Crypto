@@ -1,0 +1,292 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+@font-face {
+	font-family: 'theSerifItalic';
+	src: url(../fonts/TheSerif_B4_Italic.eot),
+		 url(../fonts/TheSerif_B4_Italic.woff) format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'theSerif';
+	src: url(../fonts/TheSerif_B4_Plain_.eot),
+		 url(../fonts/TheSerif_B4_Plain_.woff) format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'theSerif';
+	src: url(../fonts/TheSerif_B4_Bold_.eot),
+		 url(../fonts/TheSerif_B4_Bold_.woff) format("woff");
+	font-weight: 800;
+	font-style: normal;
+}
+/*body.experiment{
+	width:100%;
+	height: 100%;
+}*/
+
+body {
+	width:100%;
+	height: 100%;
+	/*background: #3a87ad
+	/*background: #FcFcFf;*/
+	-webkit-font-smoothing: antialiased;
+	float:left;
+}
+
+a {
+	color: #2F7732;
+}
+
+/*.btn {
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+}*/
+
+/*a:focus, a:active, a::-moz-focus-inner {
+    border: 0;
+    outline : 0;
+    text-decoration: none;
+}*/
+
+
+/* Header */
+
+#headerContainer {
+	position: relative;
+	width: 100%;
+	/*min-width: 1000px;*/
+	background: #F5F4F2;
+	z-index: 1000;		
+	height: 48px;
+	box-shadow: 0px 4px 1px rgba(0,0,0,.25);		
+}
+
+#header {
+	position: relative;
+	margin: auto;
+	width: 100%;
+	/*min-width: 850px;*/
+	height: 48px;
+}
+
+div#title {
+	position:absolute;
+	display: inline-block;
+	font-family: 'theSerif', georgia, times, serif;
+	font-size: 1.6em;
+	font-weight: bold;
+	top: 8px;
+	left: 8px;
+}
+
+div#title a:hover {
+	text-decoration: none;
+}
+
+nav#pageNav {
+	position:absolute;
+	top:15px; 
+	right:8px;
+	font-size: .9em;
+}
+
+nav#pageNav a {
+	margin-left: 6px;
+	font-weight: bold;
+}
+
+/*nav#pageNav a:hover {
+	text-decoration: none;
+	border-bottom: 3px solid #7AE6DF;
+}*/
+
+div#lessonNavContainer {
+	position:absolute;
+	top:13px; 
+	left: 28px;
+	right:28px;
+	text-align: center;	
+}
+
+/*Experiment Styles*/
+
+.presucces{
+	background-color: #DFF0D8;
+}
+
+.height-300{
+	height: 330px;
+}
+
+.pad-24{
+	padding-right: 24px;
+}
+
+.pad-12{
+	padding-right: 12px;
+}
+
+.pad-6{
+	padding-right: 6px;
+}
+
+.pad4{
+	padding-right: 2px;
+	padding-left: 4px;
+}
+
+.showBox {
+	border: 1px solid #222222;
+
+}
+
+.showBoxgreen {
+	border: 1px solid #ffcc00;
+
+}
+
+.showBoxblue {
+	border: 1px solid #0000cc;
+
+}
+
+.showBoxred {
+	border: 1px solid #bb0000;
+
+}
+.showBoxgrey {
+	border: 1px solid #888888;
+
+}
+
+.bigBox {
+	/*border: 2px solid #b8b288;*/
+	float: left;
+	/*width: 440px;
+	height: 440px;*/
+}
+
+.tinyfont{
+	font-family: 'theSerif', georgia, times, serif;
+	font-size: 0.65em;
+
+}
+
+.monospace{
+	font-family:monospace;
+}
+
+
+/*Navigation Styles*/
+.lessonButton {
+	font-size: 1.1em;
+	font-weight: bold;
+	font-family: 'theSerif', georgia, times, serif; 
+	color: #2F7732;
+	padding: 15px 4px;
+}
+
+.lessonButton sub {
+	font-size: .9em;
+}
+
+.lessonButton:hover span {
+	border-bottom: 3px solid #AA0000;
+	color: #AA0000;
+}
+
+.lessonButton:hover {
+	text-decoration: none;
+	color: #AA0000;
+} 
+
+a.active span, a.active:hover span {
+	color: #AA0000;
+	background: transparent;
+	border-bottom: 3px solid #665A52;
+	
+}
+
+div#blogContainer {
+	margin-left: 24px;
+}
+
+
+/*
+div#canvasContainer {
+	display: true;
+	position: absolute;
+	top:0;
+	left:455px;
+	float:left;
+	margin-left: 40px;
+	padding: 6px;
+	width: 600px;
+	height: 465px;
+	z-index: 500;
+} */
+
+
+h1#displayTitle {
+	font-family: 'theSerif', georgia, times, serif; 
+	font-size: 1.6em;
+	/*color: #428BCA;*/
+	margin: 0 0 8px 0;
+	padding: 0;
+}
+
+
+
+
+/* Page template */
+
+/*body.about #header, body.guide #header {
+	width: 80%;
+}
+
+body.about .aboutButton,  body.guide .guideButton{
+	text-decoration: none;
+	border-bottom: 3px solid #7AE6DF;
+}*/
+
+.samefont{
+	line-height: 1.3em;
+	color: #333;
+	font-size: 0.9em;
+	font-family: 'theSerif', georgia, times, serif; 
+}
+
+div#page {
+	margin: 5px auto;
+    padding-top: 4px;
+	padding-left: 4px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+   /* min-width: 1000px;*/
+	width: 100%;
+	height: 710px;
+	
+	
+	z-index: 2000;
+	border-bottom: 4px solid rgba(33, 78, 24, 0.69);
+
+	box-shadow: 4px 4px 1px rgba(0,0,0,.25);	
+	background: rgba(245, 244, 242, 0.11);
+	/* line-height: 1.5em; */
+	font-size: 1.4em;
+	/* font-family: 'theSerif', georgia, times, serif; */ 
+}
+
+div#page h2 {
+	margin-top: 0;
+}
+
+div#page h2, div#page h3 {
+	font-family: 'theSerif', georgia, times, serif; 
+	color: #2F7732;	
+}

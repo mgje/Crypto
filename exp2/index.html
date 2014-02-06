@@ -1,0 +1,30 @@
+---
+layout: experiment
+title: ROT-13
+class: rot-13
+CSName: experiment.css
+---
+<div class="container-fluid">
+  <div class="row">
+    <!-- colum left -->
+    <div class="col-md-6 col-sm-6">  
+       <h3>ROT-13 Verschlüsselung</h3>
+       <div id="keytable" class="table-responsive">
+       </div>
+    </div>
+    <!-- <div class="col-md-1"></div> -->
+    <!-- colum rigth -->
+    <div class="col-md-5 col-sm-5">
+
+      <div class="btn-group">
+      <button id = "btn_crypt" type="submit" name="button1" class="btn" ><i class="glyphicon glyphicon-chevron-right"></i> Verschlüsseln</button>
+      </div>
+
+      <textarea id="inputTxt" class="form-control" rows="14">DIE ZAHL ELF GILT ALLGEMEIN ALS NÄRRISCHE ZAHL UND SPIELT IM LAUFE DES KARNEVALS EINE GROSSE ROLLE. ZUM URSPRUNG DIESER ZAHLENSYMBOLIK GIBT ES VERSCHIEDENE ANSICHTEN. ES GIBT EINE REIHE VON ZAHLEN, DENEN VON SEITENS DER RELIGION EINE BESONDERE SYMBOLISCHE BEDEUTUNG BEIGEMESSEN WIRD. DIE ELF GILT DABEI ALS ZAHL DER MASSLOSIGKEIT, DER SÜNDE, SOGAR ALS TEUFLISCHE ZAHL. IM MITTELALTER KENNZEICHNETE SIE MENSCHEN AUSSERHALB DER SITTENGESETZE.</textarea>
+      <pre id="outputTxt" class="height-300 presucces pre-scrollable">der Output</pre>
+    </div>
+  </div>
+</div>
+
+
+<script src="../js/rot13.js"></script>

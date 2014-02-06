@@ -1,0 +1,215 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+@font-face {
+	font-family: 'theSerifItalic';
+	src: url(../fonts/TheSerif_B4_Italic.eot),
+		 url(../fonts/TheSerif_B4_Italic.woff) format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'theSerif';
+	src: url(../fonts/TheSerif_B4_Plain_.eot),
+		 url(../fonts/TheSerif_B4_Plain_.woff) format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'theSerif';
+	src: url(../fonts/TheSerif_B4_Bold_.eot),
+		 url(../fonts/TheSerif_B4_Bold_.woff) format("woff");
+	font-weight: 800;
+	font-style: normal;
+}
+
+body {
+	background: #5F86A3;
+	-webkit-font-smoothing: antialiased;
+	float:left;
+}
+
+body.splash {
+	background: #FcFcFf;
+}
+
+a {
+	color: #5F86A3;
+}
+
+.btn {
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+}
+
+a:focus, a:active, a::-moz-focus-inner {
+    border: 0;
+    outline : 0;
+    text-decoration: none;
+}
+
+
+/* Header */
+
+#headerContainer {
+	position: relative;
+	width: 100%;
+	min-width: 1024px;
+	background: #FcFcFf;
+	z-index: 1000;		
+	height: 48px;
+	box-shadow: 0px 4px 1px rgba(0,0,0,.25);		
+}
+
+#header {
+	position: relative;
+	margin: auto;
+	width: 100%;
+	min-width: 850px;
+	height: 48px;
+}
+
+div#title {
+	position:absolute;
+	display: inline-block;
+	font-family: 'theSerif', georgia, times, serif;
+	font-size: 1.8em;
+	font-weight: bold;
+	top:8px;
+	left:8px;
+}
+
+div#title a:hover {
+	text-decoration: none;
+}
+
+nav#pageNav {
+	position:absolute;
+	top:15px; 
+	right:8px;
+	font-size: .9em;
+}
+
+nav#pageNav a {
+	margin-left: 6px;
+	font-weight: bold;
+}
+
+nav#pageNav a:hover {
+	text-decoration: none;
+	border-bottom: 3px solid #7AE6DF;
+}
+
+div#lessonNavContainer {
+	position:absolute;
+	top:13px; 
+	left: 18px;
+	right:28px;
+	text-align: center;	
+}
+
+.lessonButton {
+	font-size: 1.3em;
+	font-weight: bold;
+	font-family: 'theSerif', georgia, times, serif; 
+	color: #5F86A3;
+	padding: 15px 4px;
+}
+
+.lessonButton sub {
+	font-size: .7em;
+}
+
+.lessonButton:hover span {
+	border-bottom: 6px solid #7AE6DF;
+}
+
+.lessonButton:hover {
+	text-decoration: none;
+} 
+
+a.active span, a.active:hover span {
+	color: #7AE6DF;
+	background: transparent;
+	border-bottom: 3px solid #665A52;
+	
+}
+
+div#blogContainer {
+	margin-left: 24px;
+}
+
+
+/*
+div#canvasContainer {
+	display: true;
+	position: absolute;
+	top:0;
+	left:455px;
+	float:left;
+	margin-left: 40px;
+	padding: 6px;
+	width: 600px;
+	height: 465px;
+	z-index: 500;
+} */
+
+div#rowContainer{
+	padding: 8px;
+}
+
+
+#errorModalText {
+	border-top: 1px solid #efefef;
+}
+
+footer#displayFooter {
+	position:absolute;
+	bottom: 1em;
+	text-align: center;
+	width: 100%;
+	color: #fff;
+	z-index: 500;
+}
+
+h1#displayTitle {
+	font-family: 'theSerif', georgia, times, serif; 
+	font-size: 1.6em;
+	color: #428BCA;
+	margin: 0 0 8px 0;
+	padding: 0;
+}
+
+
+
+
+/* Page template */
+
+div#page {
+	margin: 5px auto;
+	width: 99%;
+	min-height:720px;
+	min-width: 1000px;
+	z-index: 2000;
+	border-bottom: 6px solid #7AE6DF;
+
+	box-shadow: 4px 4px 1px rgba(0,0,0,.25);	
+	background: #fEfEfE;
+	padding: 8px;
+	line-height: 1.5em;
+	font-size: 1.1em;
+	font-family: 'theSerif', georgia, times, serif; 
+}
+
+div#page h2 {
+	margin-top: 0;
+}
+
+div#page h2, div#page h3 {
+	font-family: 'theSerif', georgia, times, serif; 
+	color: #5E86A3;	
+}
