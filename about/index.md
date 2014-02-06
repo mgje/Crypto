@@ -5,18 +5,6 @@ class: about
 ---
 ## About
 
-Die Programmierbeispiele stammen teilweise ......
-.......
-
-## Crypto Tool
-
-PrXXXXXXX
-
-
-## Dank
-Einige EXXXXX
-XXXX
-
 ## Verwendete Technologien
 
 - [Bootstrap](http://getbootstrap.com/about/) für die Darstellung wie Icons und Knöpfe
@@ -37,3 +25,8 @@ XXXX
 
 ###Verschlüsselungsverfahren
 - [Caesar](http://de.wikipedia.org/wiki/Caesar-Chiffre)
+
+## Crypto Tool
+
+
+## Dank

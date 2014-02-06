@@ -27,6 +27,8 @@
 }
 
 body {
+	width:100%;
+	height: 100%;
 	background: #5F86A3;
 	-webkit-font-smoothing: antialiased;
 	float:left;
@@ -40,7 +42,7 @@ a {
 	color: #5F86A3;
 }
 
-.btn {
+/*.btn {
   -webkit-border-radius: 0 !important;
      -moz-border-radius: 0 !important;
           border-radius: 0 !important;
@@ -50,7 +52,7 @@ a:focus, a:active, a::-moz-focus-inner {
     border: 0;
     outline : 0;
     text-decoration: none;
-}
+}*/
 
 
 /* Header */
@@ -58,7 +60,7 @@ a:focus, a:active, a::-moz-focus-inner {
 #headerContainer {
 	position: relative;
 	width: 100%;
-	min-width: 1024px;
+	/*min-width: 1024px;*/
 	background: #FcFcFf;
 	z-index: 1000;		
 	height: 48px;
@@ -69,7 +71,7 @@ a:focus, a:active, a::-moz-focus-inner {
 	position: relative;
 	margin: auto;
 	width: 100%;
-	min-width: 850px;
+	/*min-width: 850px;*/
 	height: 48px;
 }
 
