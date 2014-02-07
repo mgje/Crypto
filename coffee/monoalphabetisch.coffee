@@ -148,8 +148,16 @@ chkerr = () ->
 				hist[v] = 1
 			else
 				hist[v] += 1
-    
-    correct = []
+
+	#Show free char
+	e = document.getElementById "freechar"
+	s = ""
+	for c in keys
+		if hist[c] == undefined
+			s += "<code>"+c+"</code>"
+	e.innerHTML = s
+
+	correct = []
 	for c in @errorArray
 		if (hist[@keyTable[c]]  == undefined || hist[@keyTable[c]] < 2) && @keyClass[c] != ""
 			e = document.getElementById c

@@ -184,7 +184,7 @@
   };
 
   chkerr = function() {
-    var c, correct, e, hist, k, keys, v, _i, _j, _len, _len1, _ref, _results;
+    var c, correct, e, hist, k, keys, s, v, _i, _j, _k, _len, _len1, _len2, _ref, _results;
     keys = Object.keys(this.keyTable);
     hist = {};
     for (_i = 0, _len = keys.length; _i < _len; _i++) {
@@ -195,14 +195,23 @@
           hist[v] = 1;
         } else {
           hist[v] += 1;
-          correct = [];
         }
       }
     }
+    e = document.getElementById("freechar");
+    s = "";
+    for (_j = 0, _len1 = keys.length; _j < _len1; _j++) {
+      c = keys[_j];
+      if (hist[c] === void 0) {
+        s += "<code>" + c + "</code>";
+      }
+    }
+    e.innerHTML = s;
+    correct = [];
     _ref = this.errorArray;
     _results = [];
-    for (_j = 0, _len1 = _ref.length; _j < _len1; _j++) {
-      c = _ref[_j];
+    for (_k = 0, _len2 = _ref.length; _k < _len2; _k++) {
+      c = _ref[_k];
       if ((hist[this.keyTable[c]] === void 0 || hist[this.keyTable[c]] < 2) && this.keyClass[c] !== "") {
         e = document.getElementById(c);
         if (e.parentElement !== null) {
