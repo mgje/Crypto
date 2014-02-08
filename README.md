@@ -6,10 +6,11 @@ Verschlüsseln – damit geheime Daten  geheim bleiben
 ## ToDo
 1. ~~relative Navigation für HomeScreen App~~
 2. ~~Welche Buchstaben sind noch nicht genutzt?~~
-3. Hilfe bei der Analyse
-4. Statistik ohne Sonderzeichen
-5. About Text / Info Text
-6. Aufgabenstellungen
-7. Navigation aktives Element unterstreichen
-8. Check Typography
-9. mobile css
+3. Navigation unterstreichen 
+4. Hilfe bei der Analyse
+5. Statistik ohne Sonderzeichen
+6. About Text / Info Text
+7. Aufgabenstellungen
+8. Navigation aktives Element unterstreichen
+9. Check Typography
+10. mobile css (Handy Display)
