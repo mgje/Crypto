@@ -8,7 +8,8 @@ Verschlüsseln – damit geheime Daten  geheim bleiben
 2. -Welche Buchstaben sind noch nicht genutzt?-
 3. Hilfe bei der Analyse
 4. Statistik ohne Sonderzeichen
-5. About Text
+5. About Text / Info Text
 6. Aufgabenstellungen
 7. Navigation aktives Element unterstreichen
 8. Check Typography
+9. mobile css
