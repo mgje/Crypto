@@ -211,8 +211,8 @@ chist = () ->
 	input = e.value
 	count = 0
 	for c in input
-		count += 1
 		if c of @keyTable
+			count += 1
 			@keyProz[c] +=1
 
 	keys = Object.keys @keyTable
@@ -235,7 +235,38 @@ whisto = () ->
 
 		t = document.createTextNode tx
 		e.appendChild t
+	
+	@sortcharlist()
+	false
 
+schr = () ->
+	el= document.getElementById "crypC0"
+	if el != null
+		keys = Object.keys @keyTable
+		charproz = []
+		for c in keys
+			tmp = [@keyProz[c],c]
+			charproz.push tmp
+
+		charproz.sort (a,b) -> 
+						b[0]-a[0]
+
+		for i in [0...10]
+			tmp = charproz[i]
+			s = "crypC"+i
+			e = clearAllChilds s
+			t = document.createTextNode tmp[1]
+			e.appendChild t
+			s = "crypV"+i
+			e = clearAllChilds s
+			num = parseFloat tmp[0]
+			if isNaN num
+				tx = ""
+			else
+				tx = ""+num.toFixed(1)+"%"
+			t = document.createTextNode tx
+			e.appendChild t
+	
 	false
 
 exp = 
@@ -262,6 +293,7 @@ exp =
 	crypt : crpt
 	calchisto : chist
 	writehisto : whisto
+	sortcharlist : schr
 
 exp.keyTable = 
 	"A" : ""
@@ -294,17 +326,13 @@ exp.keyTable =
 exp.errorArray = []
 exp.keyClass = {}
 exp.keyProz = {}
-
 exp.initKeyProz()
 # exp.calchisto()
-
 #exp.initKeyValues()
 exp.createKeyTable()
-
 #exp.rotkey 3
 exp.updateKeyForm()
 exp.capitalize()
-
 exp.crypt()
 exp.calchisto()
 
