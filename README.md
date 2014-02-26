@@ -14,4 +14,4 @@ Verschlüsseln – damit geheime Daten  geheim bleiben
 8. ~~Navigation aktives Element unterstreichen~~
 9. Check Typography
 10. Mobile css (Handy Display)
-11. Texte anbieten
+11. ~~Texte anbieten~~

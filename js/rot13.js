@@ -156,6 +156,7 @@
         out += c;
       }
     }
+    out = out.toLocaleLowerCase();
     e2 = clearAllChilds("outputTxt");
     t = document.createTextNode(out);
     e2.appendChild(t);
