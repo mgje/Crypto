@@ -215,10 +215,10 @@ table {
 
 @media print {
   * {
-    color: #000 !important;
+    /*color: #000 !important;
     text-shadow: none !important;
     background: transparent !important;
-    box-shadow: none !important;
+    box-shadow: none !important;*/
   }
   a,
   a:visited {
@@ -268,11 +268,11 @@ table {
   }
   .table td,
   .table th {
-    background-color: #fff !important;
+    /*background-color: #fff !important;*/
   }
   .btn > .caret,
   .dropup > .btn > .caret {
-    border-top-color: #000 !important;
+    /*border-top-color: #000 !important;*/
   }
   .label {
     border: 1px solid #000;
@@ -282,7 +282,7 @@ table {
   }
   .table-bordered th,
   .table-bordered td {
-    border: 1px solid #ddd !important;
+    /*border: 1px solid #ddd !important;*/
   }
 }
 

@@ -359,7 +359,7 @@ eform.onkeypress = (e) ->
 e = document.getElementById "keytable"
 e.onkeyup = (e) ->
 	src = e.srcElement || e.target
-	src.value = src.value.toLocaleUpperCase()
+	src.value = src.value.toLocaleLowerCase()
 	if src.value.length > 1
 		src.value = src.value[0]
 	exp.checkunique(src.id,src.value)
