@@ -28,7 +28,7 @@
     _results = [];
     for (_i = 0, _len = keys.length; _i < _len; _i++) {
       key = keys[_i];
-      _results.push(this.keyTable[key] = key);
+      _results.push(this.keyTable[key] = key.toLocaleLowerCase());
     }
     return _results;
   };

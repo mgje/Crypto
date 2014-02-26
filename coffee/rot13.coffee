@@ -15,7 +15,7 @@ upKForm = () ->
 iKVal = () ->
 	keys = Object.keys @keyTable
 	for key in keys
-		@keyTable[key]=key
+		@keyTable[key]=key.toLocaleLowerCase()
 
 
 rotp = () ->

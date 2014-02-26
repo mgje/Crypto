@@ -15,7 +15,7 @@ upKForm = () ->
 iKVal = () ->
 	keys = Object.keys @keyTable
 	for key in keys
-		@keyTable[key]=key
+		@keyTable[key]=key.toLocaleLowerCase()
 
 
 rotp = () ->
@@ -106,6 +106,7 @@ cRowD = (i) ->
 
 capl = () ->
 	e = document.getElementById "inputTxt"
+	# Geheimtext immer in Grossbuchstaben
 	e.value = e.value.toLocaleUpperCase()
 	false
 
@@ -153,8 +154,9 @@ chkerr = () ->
 	e = document.getElementById "freechar"
 	s = ""
 	for c in keys
-		if hist[c] == undefined
-			s += "<code>"+c+"</code>"
+		lc = c.toLocaleLowerCase()
+		if hist[lc] == undefined
+			s += "<code>"+lc+"</code>"
 	e.innerHTML = s
 
 	correct = []
@@ -186,7 +188,7 @@ chkuni = (k,v) ->
 	false
 
 exp = 
-	name : "Cesar"
+	name : "Monoalphabetisch"
 	keycolumn : 10
 	initKeyValues : iKVal
 	updateKeyForm : upKForm
@@ -264,7 +266,7 @@ eform.onkeypress = (e) ->
 e = document.getElementById "keytable"
 e.onkeyup = (e) ->
 	src = e.srcElement || e.target
-	src.value = src.value.toLocaleUpperCase()
+	src.value = src.value.toLocaleLowerCase()
 	if src.value.length > 1
 		src.value = src.value[0]
 	exp.checkunique(src.id,src.value)

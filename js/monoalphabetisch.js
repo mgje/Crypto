@@ -28,7 +28,7 @@
     _results = [];
     for (_i = 0, _len = keys.length; _i < _len; _i++) {
       key = keys[_i];
-      _results.push(this.keyTable[key] = key);
+      _results.push(this.keyTable[key] = key.toLocaleLowerCase());
     }
     return _results;
   };
@@ -185,7 +185,7 @@
   };
 
   chkerr = function() {
-    var c, correct, e, hist, k, keys, s, v, _i, _j, _k, _len, _len1, _len2, _ref, _results;
+    var c, correct, e, hist, k, keys, lc, s, v, _i, _j, _k, _len, _len1, _len2, _ref, _results;
     keys = Object.keys(this.keyTable);
     hist = {};
     for (_i = 0, _len = keys.length; _i < _len; _i++) {
@@ -203,8 +203,9 @@
     s = "";
     for (_j = 0, _len1 = keys.length; _j < _len1; _j++) {
       c = keys[_j];
-      if (hist[c] === void 0) {
-        s += "<code>" + c + "</code>";
+      lc = c.toLocaleLowerCase();
+      if (hist[lc] === void 0) {
+        s += "<code>" + lc + "</code>";
       }
     }
     e.innerHTML = s;
@@ -254,7 +255,7 @@
   };
 
   exp = {
-    name: "Cesar",
+    name: "Monoalphabetisch",
     keycolumn: 10,
     initKeyValues: iKVal,
     updateKeyForm: upKForm,
@@ -341,7 +342,7 @@
   e.onkeyup = function(e) {
     var src;
     src = e.srcElement || e.target;
-    src.value = src.value.toLocaleUpperCase();
+    src.value = src.value.toLocaleLowerCase();
     if (src.value.length > 1) {
       src.value = src.value[0];
     }
