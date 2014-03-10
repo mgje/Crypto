@@ -1,7 +1,6 @@
 ---
 layout: experiment
 title: ROT-X 
-nr: 2
 class: ROT-X 
 CSName: experiment.css
 ---
@@ -12,7 +11,10 @@ CSName: experiment.css
        
        <h3>ROT-X Verschlüsselung 
           <button id = "btn_left" type="submit" name="button1" class="btn" ><i class="glyphicon glyphicon-arrow-left"></i> nach links </button>
-          <button id = "btn_right" type="submit" name="button1" class="btn" > nach rechts <i class="glyphicon glyphicon-arrow-right"></i> </button>
+          <button id = "btn_right" type="submit" name="button2" class="btn" > nach rechts <i class="glyphicon glyphicon-arrow-right"></i> </button>
+          
+           <button id="rotx" type="button" class="btn btn-danger pull-right" >  <i class="glyphicon glyphicon-retweet"></i>&nbsp; <b id="rotx_value">0</b></button>
+          
        </h3>
 
        <div id="keytable" class="table-responsive">
@@ -21,14 +23,18 @@ CSName: experiment.css
     <!-- <div class="col-md-1"></div> -->
     <!-- colum rigth -->
     <div class="col-md-5 col-sm-5">
+      <form class="form-search" action="#">
 
+      
+      <h3>Input</h3>
       <div class="btn-group">
       <button id = "btn_crypt" type="submit" name="button1" class="btn" ><i class="glyphicon glyphicon-chevron-right"></i> Verschlüsseln</button>
       </div>
 
-      <textarea id="inputTxt" class="form-control" rows="14">WÄHREND ER SO SASS, FIELEN SEINE BLICKE HÄUFIG AUF DEN JUNGEN DOCTOR, DEN DER ALTE KÖNIG NICHT EHER ZIEHEN LASSEN WOLLTE, ALS BIS DER SOHN SICH VOLLSTÄNDIG ERHOLT HABE. EINES TAGES SAGTE DER KÖNIGSSOHN SEUFZEND ZUM DOKTOR: »ES TUT MIR HERZLICH LEID, DASS GOTT EUCH NICHT EIN FRAUENZIMMER HAT WERDEN LASSEN. MIR IST IN MEINEM LEBEN NOCH KEIN SCHÖNERES ANTLITZ VORGEKOMMEN ALS DAS EURIGE -- ICH WÜRDE EUCH GEWISS FREIEN, WENN IHR EIN WEIB WÄRET.« DER DOCTOR ERWIDERTE: »SEID ZUFRIEDEN MIT DEM, WAS GOTT GEMACHT HAT, UND DANKET IHM DAFÜR, DASS IHR VON SCHWERER KRANKHEIT GENESEN SEID. IHR KÖNNT EUCH JETZT, DA IHR WOHLAUF SEID, JEDEN TAG AUS DEN EDELSTEN GESCHLECHTERN EINE LEBENSGEFÄHRTIN WÄHLEN.«</textarea>
-      <pre id="outputTxt" class="height-300 presucces pre-scrollable">der Output</pre>
-    
+      <textarea id="inputTxt" class="form-control" rows="9">DIE ZAHL ELF GILT ALLGEMEIN ALS NÄRRISCHE ZAHL UND SPIELT IM LAUFE DES KARNEVALS EINE GROSSE ROLLE. ZUM URSPRUNG DIESER ZAHLENSYMBOLIK GIBT ES VERSCHIEDENE ANSICHTEN. ES GIBT EINE REIHE VON ZAHLEN, DENEN VON SEITENS DER RELIGION EINE BESONDERE SYMBOLISCHE BEDEUTUNG BEIGEMESSEN WIRD. DIE ELF GILT DABEI ALS ZAHL DER MASSLOSIGKEIT, DER SÜNDE, SOGAR ALS TEUFLISCHE ZAHL. IM MITTELALTER KENNZEICHNETE SIE MENSCHEN AUSSERHALB DER SITTENGESETZE.</textarea>
+      <h3>Output</h3>
+      <pre id="outputTxt" class="height-300 presucces">der Output</pre>
+    </form>
     </div>
   </div>
 </div>

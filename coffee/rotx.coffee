@@ -15,10 +15,14 @@ upKForm = () ->
 iKVal = () ->
 	keys = Object.keys @keyTable
 	for key in keys
-		@keyTable[key]=key.toLocaleLowerCase()
+		@keyTable[key]=key
 
 
 rotp = () ->
+	@rotx +=1
+	e = clearAllChilds "rotx_value"
+	t = document.createTextNode @rotx
+	e.appendChild t
 	keys = Object.keys @keyTable
 	lastkey = keys[keys.length-1]
 	tmpValue = @keyTable[lastkey]
@@ -29,6 +33,10 @@ rotp = () ->
 	false
 
 rotm = () ->
+	@rotx -=1
+	e = clearAllChilds "rotx_value"
+	t = document.createTextNode @rotx
+	e.appendChild t
 	keys = Object.keys @keyTable
 	keys.reverse()
 	lastkey = keys[keys.length-1]
@@ -119,7 +127,7 @@ crpt = () ->
 			out += @keyTable[c]
 		else
 			out += c
-	out = out.toLocaleLowerCase()
+
 	e2 = clearAllChilds "outputTxt"
 	t = document.createTextNode out
 	e2.appendChild t
@@ -176,6 +184,8 @@ exp.createKeyTable()
 exp.updateKeyForm()
 exp.capitalize()
 exp.crypt()
+# Rot Counter
+exp.rotx=0
 
 # Event Listener
 bt = document.getElementById "btn_crypt"

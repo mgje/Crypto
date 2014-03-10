@@ -28,13 +28,17 @@
     _results = [];
     for (_i = 0, _len = keys.length; _i < _len; _i++) {
       key = keys[_i];
-      _results.push(this.keyTable[key] = key.toLocaleLowerCase());
+      _results.push(this.keyTable[key] = key);
     }
     return _results;
   };
 
   rotp = function() {
-    var key, keys, lastkey, tmp2, tmpValue, _i, _len;
+    var e, key, keys, lastkey, t, tmp2, tmpValue, _i, _len;
+    this.rotx += 1;
+    e = clearAllChilds("rotx_value");
+    t = document.createTextNode(this.rotx);
+    e.appendChild(t);
     keys = Object.keys(this.keyTable);
     lastkey = keys[keys.length - 1];
     tmpValue = this.keyTable[lastkey];
@@ -48,7 +52,11 @@
   };
 
   rotm = function() {
-    var key, keys, lastkey, tmp2, tmpValue, _i, _len;
+    var e, key, keys, lastkey, t, tmp2, tmpValue, _i, _len;
+    this.rotx -= 1;
+    e = clearAllChilds("rotx_value");
+    t = document.createTextNode(this.rotx);
+    e.appendChild(t);
     keys = Object.keys(this.keyTable);
     keys.reverse();
     lastkey = keys[keys.length - 1];
@@ -156,7 +164,6 @@
         out += c;
       }
     }
-    out = out.toLocaleLowerCase();
     e2 = clearAllChilds("outputTxt");
     t = document.createTextNode(out);
     e2.appendChild(t);
@@ -219,6 +226,8 @@
   exp.capitalize();
 
   exp.crypt();
+
+  exp.rotx = 0;
 
   bt = document.getElementById("btn_crypt");
 
