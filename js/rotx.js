@@ -242,6 +242,8 @@
   bt.onclick = function(e) {
     exp.rotminus1();
     exp.updateKeyForm();
+    exp.capitalize();
+    exp.crypt();
     return false;
   };
 
@@ -250,6 +252,8 @@
   bt.onclick = function(e) {
     exp.rotplus1();
     exp.updateKeyForm();
+    exp.capitalize();
+    exp.crypt();
     return false;
   };
 

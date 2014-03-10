@@ -198,12 +198,16 @@ bt = document.getElementById "btn_left"
 bt.onclick = (e) ->
 	exp.rotminus1()
 	exp.updateKeyForm()
+	exp.capitalize()
+	exp.crypt()
 	false 
 
 bt = document.getElementById "btn_right"
 bt.onclick = (e) ->
 	exp.rotplus1()
 	exp.updateKeyForm()
+	exp.capitalize()
+	exp.crypt()
 	false 
 
 
