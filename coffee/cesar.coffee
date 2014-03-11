@@ -125,6 +125,14 @@ crpt = () ->
 	e2.appendChild t
 	false
 
+mkIKTable = () ->
+	keys = Object.keys @keyTable
+	ikT = {}
+	for k in keys
+		ikT[keys[k]] = k
+	@invkeyTable = ikT
+	console.log ikT
+
 
 exp = 
 	name : "Cesar"
@@ -142,6 +150,7 @@ exp =
 	getKey : gKey
 	capitalize : capl
 	crypt : crpt
+	makeInvKeyTable : mkIKTable
 	
 exp.keyTable = 
 	"A" : ""
@@ -172,11 +181,14 @@ exp.keyTable =
 	"Z"	: ""
 
 exp.initKeyValues()
+exp.makeInvKeyTable()
 exp.createKeyTable()
 exp.rotkey 3
 exp.updateKeyForm()
 exp.capitalize()
 exp.crypt()
+
+
 
 # Event Listener
 bt = document.getElementById "btn_crypt"
