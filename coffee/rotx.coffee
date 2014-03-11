@@ -132,6 +132,30 @@ crpt = () ->
 	t = document.createTextNode out
 	e2.appendChild t
 	false
+	
+decrpt = () ->
+	e = document.getElementById "inputTxt"
+	input = e.value
+	out = ""
+	for c in input
+		if c of @invkeyTable
+			out += @invkeyTable[c]
+		else
+			out += c
+	out = out.toLocaleLowerCase()
+	e2 = clearAllChilds "outputTxt"
+	t = document.createTextNode out
+	e2.appendChild t
+	false
+
+mkIKTable = () ->
+	keys = Object.keys @keyTable
+	ikT = {}
+	for k in keys
+		v = @keyTable[k].toLocaleUpperCase()
+		ikT[v] = k.toLocaleLowerCase()
+	@invkeyTable = ikT
+	false
 
 
 exp = 
@@ -150,6 +174,8 @@ exp =
 	getKey : gKey
 	capitalize : capl
 	crypt : crpt
+	decrypt : decrpt
+	makeInvKeyTable : mkIKTable
 	
 exp.keyTable = 
 	"A" : ""
@@ -193,6 +219,13 @@ bt.onclick = (e) ->
 	exp.capitalize()
 	exp.crypt()
 	false 	
+
+bt = document.getElementById "btn_decrypt"
+bt.onclick = (e) ->
+	exp.capitalize()
+	exp.makeInvKeyTable()
+	exp.decrypt()
+	false 		
 
 bt = document.getElementById "btn_left"
 bt.onclick = (e) ->
