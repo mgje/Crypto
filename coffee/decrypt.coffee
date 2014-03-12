@@ -200,7 +200,8 @@ chkerr = () ->
 	for c in @errorArray
 		if (hist[@keyTable[c]]  == undefined || hist[@keyTable[c]] < 2) && @keyClass[c] != ""
 			e = document.getElementById c
-			e.parentElement.className = @keyClass[c]
+			if e.parentElement.className != null
+				e.parentElement.className = @keyClass[c]
 			@keyClass[c] = ""
 			@errorArray.splice @errorArray.indexOf(c),1
 			# @updateKeyForm()

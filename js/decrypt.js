@@ -269,7 +269,9 @@
       c = _ref[_j];
       if ((hist[this.keyTable[c]] === void 0 || hist[this.keyTable[c]] < 2) && this.keyClass[c] !== "") {
         e = document.getElementById(c);
-        e.parentElement.className = this.keyClass[c];
+        if (e.parentElement.className !== null) {
+          e.parentElement.className = this.keyClass[c];
+        }
         this.keyClass[c] = "";
         this.errorArray.splice(this.errorArray.indexOf(c), 1);
         _results.push(this.checkError());
