@@ -160,14 +160,16 @@ decrpt = () ->
 		if c of @keyTable
 			v = @keyTable[c]
 			if v == "" || v == " "
-				v = "."
+				v = "<div class= 'disabled'>"+c+"</div>"
+			else
+				v = "<div class='active'>"+v+"</div>"
 			out += v
 			@NumEncCharacters += 1
 		else
-			out += c
-	out = out.toLocaleUpperCase()
+			out += "<div class='active'>" + c.toLocaleUpperCase() + "</div>"
+	# out = out.toLocaleUpperCase()
 	e2 = clearAllChilds "outputTxt"
-	t = document.createTextNode out
+	e2.innerHTML = out
 	e2.appendChild t
 	e3 = clearAllChilds "tot_enc_char"
 	t3 = document.createTextNode @NumEncCharacters

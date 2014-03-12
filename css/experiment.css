@@ -307,3 +307,17 @@ border-color: #D6E9C6;
 background: #DFF0D8;
 
 }
+
+div.disabled, div.DISABLED {
+	color: #ccc;
+	float: left;
+
+}
+
+div.active, div.ACTIVE {
+	float: left;
+
+}
+
+
+

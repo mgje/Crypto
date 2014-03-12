@@ -202,7 +202,7 @@
   };
 
   decrpt = function() {
-    var c, e, e2, e3, input, out, t, t3, v, _i, _len;
+    var c, e, e2, e3, input, out, t3, v, _i, _len;
     e = document.getElementById("inputTxt");
     input = e.value;
     out = "";
@@ -212,17 +212,18 @@
       if (c in this.keyTable) {
         v = this.keyTable[c];
         if (v === "" || v === " ") {
-          v = ".";
+          v = "<div class= 'disabled'>" + c + "</div>";
+        } else {
+          v = "<div class='active'>" + v + "</div>";
         }
         out += v;
         this.NumEncCharacters += 1;
       } else {
-        out += c;
+        out += "<div class='active'>" + c.toLocaleUpperCase() + "</div>";
       }
     }
-    out = out.toLocaleUpperCase();
     e2 = clearAllChilds("outputTxt");
-    t = document.createTextNode(out);
+    e2.innerHTML = out;
     e2.appendChild(t);
     e3 = clearAllChilds("tot_enc_char");
     t3 = document.createTextNode(this.NumEncCharacters);
