@@ -224,7 +224,6 @@
     }
     e2 = clearAllChilds("outputTxt");
     e2.innerHTML = out;
-    e2.appendChild(t);
     e3 = clearAllChilds("tot_enc_char");
     t3 = document.createTextNode(this.NumEncCharacters);
     e3.appendChild(t3);
