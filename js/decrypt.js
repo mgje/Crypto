@@ -212,14 +212,14 @@
       if (c in this.keyTable) {
         v = this.keyTable[c];
         if (v === "" || v === " ") {
-          v = "<div class= 'disabled'>" + c + "</div>";
+          v = "<span class= 'disabled'>" + c + "</span>";
         } else {
-          v = "<div class='active'>" + v + "</div>";
+          v = "<span class='active'>" + v + "</span>";
         }
         out += v;
         this.NumEncCharacters += 1;
       } else {
-        out += "<div class='active'>" + c.toLocaleUpperCase() + "</div>";
+        out += "<span class='active'>" + c.toLocaleUpperCase() + "</span>";
       }
     }
     e2 = clearAllChilds("outputTxt");

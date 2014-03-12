@@ -308,13 +308,13 @@ background: #DFF0D8;
 
 }
 
-div.disabled, div.DISABLED {
+span.disabled, span.DISABLED {
 	color: #ccc;
 	float: left;
 
 }
 
-div.active, div.ACTIVE {
+span.active, span.ACTIVE {
 	float: left;
 
 }

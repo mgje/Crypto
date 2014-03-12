@@ -160,13 +160,13 @@ decrpt = () ->
 		if c of @keyTable
 			v = @keyTable[c]
 			if v == "" || v == " "
-				v = "<div class= 'disabled'>"+c+"</div>"
+				v = "<span class= 'disabled'>"+c+"</span>"
 			else
-				v = "<div class='active'>"+v+"</div>"
+				v = "<span class='active'>"+v+"</span>"
 			out += v
 			@NumEncCharacters += 1
 		else
-			out += "<div class='active'>" + c.toLocaleUpperCase() + "</div>"
+			out += "<span class='active'>" + c.toLocaleUpperCase() + "</span>"
 	# out = out.toLocaleUpperCase()
 	e2 = clearAllChilds "outputTxt"
 	e2.innerHTML = out
