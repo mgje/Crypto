@@ -23,6 +23,12 @@ iKProz = () ->
 		@keyProz[key]=0.0
 
 
+iKAbs = () ->
+	keys = Object.keys @keyTable
+	for key in keys
+		@keyAbs[key]=0.0
+
+
 rotp = () ->
 	keys = Object.keys @keyTable
 	lastkey = keys[keys.length-1]
@@ -114,7 +120,7 @@ cRowS = (i) ->
 	keys = Object.keys @keyTable
 	for k in [0...@keycolumn]
 		"""
-		<td class="#{getBackground(k)} text-center">#{@getKey(k+i*@keycolumn)}</td>
+		<td class="#{getBackground(k)} text-center">#{@getKey(k+i*@keycolumn).toLocaleLowerCase()}</td>
 		"""
 
 cRowP = (i) ->
@@ -140,23 +146,32 @@ capl = () ->
 	e.value = e.value.toLocaleUpperCase()
 	false
 
+lowCas = () ->
+	e = document.getElementById "inputTxt"
+	e.value = e.value.toLocaleLowerCase()
+	false
 
-crpt = () ->
+decrpt = () ->
 	e = document.getElementById "inputTxt"
 	input = e.value
 	out = ""
+	@NumEncCharacters = 0
 	for c in input
 		if c of @keyTable
 			v = @keyTable[c]
 			if v == "" || v == " "
 				v = "."
 			out += v
+			@NumEncCharacters += 1
 		else
 			out += c
-	out = out.toLocaleLowerCase()
+	out = out.toLocaleUpperCase()
 	e2 = clearAllChilds "outputTxt"
 	t = document.createTextNode out
 	e2.appendChild t
+	e3 = clearAllChilds "tot_enc_char"
+	t3 = document.createTextNode @NumEncCharacters
+	e3.appendChild t3
 	false
 
 mField = () ->
@@ -206,18 +221,20 @@ chkuni = (k,v) ->
 	false
 
 chist = () ->
-	@initKeyProz()
+	@initKeyAbs()
 	e = document.getElementById "inputTxt"
 	input = e.value
 	count = 0
 	for c in input
 		if c of @keyTable
 			count += 1
-			@keyProz[c] +=1
+			@keyAbs[c] +=1
 
 	keys = Object.keys @keyTable
+	
+
 	for c in keys
-		@keyProz[c] = @keyProz[c]/count*100
+		@keyProz[c] = @keyAbs[c]/count*100
 
 	@writehisto()
 	false
@@ -227,11 +244,18 @@ whisto = () ->
 	for c in keys
 		s = "P-"+c
 		e = clearAllChilds s
-		num = parseFloat @keyProz[c]
-		if isNaN num
-			tx = ""
+		if @stateSwitch == "relative"
+			num = parseFloat @keyProz[c]
+			if isNaN num
+				tx = ""
+			else
+				tx = ""+num.toFixed(1)+"%"
 		else
-			tx = ""+num.toFixed(1)+"%"
+			num = @keyAbs[c]
+			if isNaN num
+				tx = ""
+			else
+				tx = ""+num
 
 		t = document.createTextNode tx
 		e.appendChild t
@@ -274,6 +298,7 @@ exp =
 	keycolumn : 10
 	initKeyValues : iKVal
 	initKeyProz : iKProz
+	initKeyAbs : iKAbs
 	updateKeyForm : upKForm
 	rotplus1 : rotp
 	rotminus1 : rotm
@@ -290,58 +315,85 @@ exp =
 	getKey : gKey
 	getProz : gProz
 	capitalize : capl
-	crypt : crpt
+	lowerCase : lowCas
+	decrypt : decrpt
 	calchisto : chist
 	writehisto : whisto
 	sortcharlist : schr
 
 exp.keyTable = 
-	"A" : ""
-	"B"	: ""
-	"C" : ""
-	"D"	: ""
-	"E" : ""
-	"F"	: ""
-	"G" : ""
-	"H"	: ""
-	"I" : ""
-	"J"	: ""
-	"K" : ""
-	"L"	: ""	
-	"M" : ""
-	"N"	: ""
-	"O" : ""
-	"P"	: ""
-	"Q" : ""
-	"R"	: ""
-	"S" : ""
-	"T"	: ""
-	"U" : ""
-	"V"	: ""	
-	"W" : ""
-	"X"	: ""
-	"Y" : ""
-	"Z"	: ""
+	"a" : ""
+	"b"	: ""
+	"c" : ""
+	"d"	: ""
+	"e" : ""
+	"f"	: ""
+	"g" : ""
+	"h"	: ""
+	"i" : ""
+	"j"	: ""
+	"k" : ""
+	"l"	: ""	
+	"m" : ""
+	"n"	: ""
+	"o" : ""
+	"p"	: ""
+	"q" : ""
+	"r"	: ""
+	"s" : ""
+	"t"	: ""
+	"u" : ""
+	"v"	: ""	
+	"w" : ""
+	"x"	: ""
+	"y" : ""
+	"z"	: ""
 
+exp.NumEncCharacters = 1
+exp.stateSwitch = "relative"
 exp.errorArray = []
 exp.keyClass = {}
 exp.keyProz = {}
+exp.keyAbs = {}
 exp.initKeyProz()
-# exp.calchisto()
-#exp.initKeyValues()
 exp.createKeyTable()
-#exp.rotkey 3
 exp.updateKeyForm()
-exp.capitalize()
-exp.crypt()
+exp.lowerCase()
+exp.decrypt()
 exp.calchisto()
 
 # Event Listener
 bt = document.getElementById "btn_crypt"
 bt.onclick = (e) ->
-	exp.capitalize()
-	exp.crypt()
+	exp.lowerCase()
+	exp.decrypt()
 	exp.calchisto()
+	false 	
+
+bt = document.getElementById "stat_rel"
+bt.onclick = (e) ->
+	e2 = document.getElementById "stat_rel"
+	indx = e2.className.indexOf "active"
+	if indx > -1
+		# alert "do nothing"
+	else
+		# alert "do it"
+		exp.stateSwitch = "relative"
+		exp.writehisto()
+		
+	false 	
+
+bt = document.getElementById "stat_abs"
+bt.onclick = (e) ->
+	e2 = document.getElementById "stat_abs"
+	indx = e2.className.indexOf "active"
+	if indx > -1
+		# alert "do nothing"
+	else
+		# alert "do it"
+		exp.stateSwitch = "absolute"
+		exp.writehisto()
+		
 	false 	
 
 # Enter
@@ -350,8 +402,8 @@ eform.onkeypress = (e) ->
 	if !e
 		e = window.event
 	if e.keyCode ==13
-		exp.capitalize()
-		exp.crypt()
+		exp.lowerCase()
+		exp.decrypt()
 		exp.calchisto()
 		false
 
@@ -359,7 +411,7 @@ eform.onkeypress = (e) ->
 e = document.getElementById "keytable"
 e.onkeyup = (e) ->
 	src = e.srcElement || e.target
-	src.value = src.value.toLocaleLowerCase()
+	src.value = src.value.toLocaleUpperCase()
 	if src.value.length > 1
 		src.value = src.value[0]
 	exp.checkunique(src.id,src.value)
