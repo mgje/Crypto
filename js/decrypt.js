@@ -269,7 +269,7 @@
       c = _ref[_j];
       if ((hist[this.keyTable[c]] === void 0 || hist[this.keyTable[c]] < 2) && this.keyClass[c] !== "") {
         e = document.getElementById(c);
-        if (e.parentElement.className !== null) {
+        if (e !== null) {
           e.parentElement.className = this.keyClass[c];
         }
         this.keyClass[c] = "";
