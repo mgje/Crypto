@@ -187,6 +187,12 @@ chkuni = (k,v) ->
 		@checkError()
 	false
 
+rkey = () ->
+	v = Object.keys @keyTable
+	alert v
+
+	false
+
 exp = 
 	name : "Monoalphabetisch"
 	keycolumn : 10
@@ -206,6 +212,7 @@ exp =
 	getKey : gKey
 	capitalize : capl
 	crypt : crpt
+	randomkey : rkey
 
 exp.keyTable = 
 	"A" : ""
@@ -244,6 +251,7 @@ exp.createKeyTable()
 exp.updateKeyForm()
 exp.capitalize()
 exp.crypt()
+exp.randomkey()
 
 # Event Listener
 bt = document.getElementById "btn_crypt"
