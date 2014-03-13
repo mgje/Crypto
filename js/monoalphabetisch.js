@@ -2,6 +2,18 @@
 (function() {
   var bt, cHTMLK, cKeyT, cRowD, cRowS, capl, chkerr, chkuni, clearAllChilds, crpt, e, eform, exp, gKey, getBackground, hde, iKVal, mField, rkey, rotk, rotm, rotp, upKForm;
 
+  (function() {
+    var _base;
+    return (_base = Array.prototype).shuffle != null ? _base.shuffle : _base.shuffle = function() {
+      var i, j, _i, _ref, _ref1;
+      for (i = _i = _ref = this.length - 1; _ref <= 1 ? _i <= 1 : _i >= 1; i = _ref <= 1 ? ++_i : --_i) {
+        j = Math.floor(Math.random() * (i + 1));
+        _ref1 = [this[j], this[i]], this[i] = _ref1[0], this[j] = _ref1[1];
+      }
+      return this;
+    };
+  })();
+
   clearAllChilds = function(id) {
     var e;
     e = document.getElementById(id);
@@ -255,8 +267,9 @@
   };
 
   rkey = function() {
-    var v;
-    v = Object.keys(this.keyTable);
+    var keys, v;
+    keys = Object.keys(this.keyTable);
+    v = keys.shuffle();
     alert(v);
     return false;
   };
