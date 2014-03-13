@@ -267,10 +267,13 @@
   };
 
   rkey = function() {
-    var keys, v;
+    var i, keys, v, _i, _ref;
     keys = Object.keys(this.keyTable);
     v = keys.shuffle();
-    alert(v);
+    for (i = _i = 0, _ref = keys.length; 0 <= _ref ? _i <= _ref : _i >= _ref; i = 0 <= _ref ? ++_i : --_i) {
+      this.keyTable[keys[i]] = v[i].toLocaleLowerCase();
+    }
+    this.crypt();
     return false;
   };
 

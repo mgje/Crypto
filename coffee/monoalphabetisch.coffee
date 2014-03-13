@@ -200,8 +200,11 @@ chkuni = (k,v) ->
 rkey = () ->
 	keys = Object.keys @keyTable
 	v = keys.shuffle()
-	alert v
+	
+	for i in [0..keys.length]
+		@keyTable[keys[i]] = v[i].toLocaleLowerCase()
 
+	@crypt()
 	false
 
 exp = 
