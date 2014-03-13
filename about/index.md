@@ -1,16 +1,24 @@
 ---
 layout: info
-title: About
+title: Interaktive Verschlüsselung
 class: about
 ---
-## About
+# Interaktive Verschlüsselung
+
+## Über das Projekt
+
+
 
 ## Verwendete Technologien
 
 - [Bootstrap](http://getbootstrap.com/about/) für die Darstellung wie Icons und Knöpfe
+- [CoffeeScript](http://coffeescript.org/) *Python like*JavaScript Programmierung
+- [jekyll](http://jekyllrb.com/) *static site gererator*
+- [markdown](http://daringfireball.net/projects/markdown/) *Text to HTML conversion*
+- [Liquid](https://github.com/Shopify/liquid) *Template Engine*
 - [jQuerry](http://jquery.com/) Interaktion, Events und DOM
 - [Modernizr](http://modernizr.com/) Browser Version überprüfen
-- [CoffeeScript](http://coffeescript.org/) Python like JavaScript Programmierung
+
 
 ## Weiterführende Verweise
 
