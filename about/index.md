@@ -16,10 +16,7 @@ Lehrpersonen der Sekundarstufe I und weiteren Interessierten steht das Lehrmitte
 [Lehrmittel zum Informatik-Biber](http://informatik-biber.ch/musik/)
 
 
-
-
 ## Verwendete Technologien
-
 - [Bootstrap](http://getbootstrap.com/about/) Für die Darstellung der Icons und Knöpfe
 - [CoffeeScript](http://coffeescript.org/) *Python like*JavaScript Programmierung
 - [jekyll](http://jekyllrb.com/) *static site gererator*
@@ -30,7 +27,6 @@ Lehrpersonen der Sekundarstufe I und weiteren Interessierten steht das Lehrmitte
 
 
 ## Weiterführende Verweise
-
 - [Crypto Tool](http://www.cryptool-online.org/)
 - [Mini-AES](http://www.sagemath.org/doc/reference/sage/crypto/block_cipher/miniaes.html) 
 - [Simply-DES](http://www.sagemath.org/doc/reference/cryptography/sage/crypto/block_cipher/sdes.html)
@@ -40,11 +36,8 @@ Lehrpersonen der Sekundarstufe I und weiteren Interessierten steht das Lehrmitte
 - [JS Encrpytion](https://github.com/mdp/gibberish-aes)
 - [crypto-js](https://code.google.com/p/crypto-js/)
 
-###Verschlüsselungsverfahren
-- [Caesar](http://de.wikipedia.org/wiki/Caesar-Chiffre)
 
 ## Creative-Commons Lizenz (CC BY 3.0 CH)
-
 Alle im Github-Repository veröffentlichten Materialien stehen unter der [CC BY 3.0 CH Lizenz](http://creativecommons.org/licenses/by/3.0/ch/).
 
 Sie dürfen:

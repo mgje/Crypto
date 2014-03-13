@@ -25,7 +25,6 @@ Lehrpersonen der Sekundarstufe I und weiteren Interessierten steht das Lehrmitte
 
 
 ## Weiterführende Verweise
-
 - [Crypto Tool](http://www.cryptool-online.org/)
 - [Mini-AES](http://www.sagemath.org/doc/reference/sage/crypto/block_cipher/miniaes.html) 
 - [Simply-DES](http://www.sagemath.org/doc/reference/cryptography/sage/crypto/block_cipher/sdes.html)
@@ -34,9 +33,6 @@ Lehrpersonen der Sekundarstufe I und weiteren Interessierten steht das Lehrmitte
 - [JS Encrypt](http://www-cs-students.stanford.edu/~tjw/jsbn/)
 - [JS Encrpytion](https://github.com/mdp/gibberish-aes)
 - [crypto-js](https://code.google.com/p/crypto-js/)
-
-###Verschlüsselungsverfahren
-- [Caesar](http://de.wikipedia.org/wiki/Caesar-Chiffre)
 
 ## Creative-Commons Lizenz (CC BY 3.0 CH)
 
