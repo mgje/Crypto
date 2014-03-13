@@ -42,7 +42,7 @@ Alle im Github-Repository veröffentlichten Materialien stehen unter der [CC BY 
 
 Sie dürfen:
 
-**Teilen** - das Material in jedwedem Format oder Medium vervielfältigen und weiterverbreiten.
+**Teilen** - das Material in jedem Format oder Medium vervielfältigen und weiterverbreiten.
 
 **Bearbeiten** - das Material remixen, verändern und darauf aufbauen und zwar für beliebige Zwecke, sogar kommerziell.
 
