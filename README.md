@@ -2,8 +2,9 @@ Crypto - Interaktive Verschlüsselung
 ====================================
 
 **Verschlüsseln – damit geheime Daten  geheim bleiben**
+*[gleich Testen / Start](http://mgje.github.io/Crypto/exp7/)*
 
-Die verschiedenen interaktiven Webanwendungen zur Verschlüsselung wurden für das Lehrmittel zum Biber-Wettbewerb
+Die verschiedenen [interaktiven Webanwendungen zur Verschlüsselung](http://mgje.github.io/Crypto/exp1/) wurden für das Lehrmittel zum Biber-Wettbewerb
 entwickelt. Finanziert wurde dieses Entwicklungsprojekt durch ICT-Berufsbildung, die HaslerStiftung und SWITCH.
 
 Das [Lehrmittel zum Biber-Wettbewerb](http://informatik-biber.ch/musik/) ist ein vom [SVIA](http://svia-ssie-ssii.ch/), dem Schweizerischen Verein für Informatik in der Ausbildung, initiiertes Projekt und hat die Förderung der Informatik auf der Sekundarstufe I zum Ziel.
