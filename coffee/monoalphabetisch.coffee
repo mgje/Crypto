@@ -20,6 +20,7 @@ upKForm = () ->
 	for key in keys
 		e = document.getElementById key
 		e.setAttribute "value",@keyTable[key]
+		e.value = @keyTable[key]
 	false
 
 iKVal = () ->
@@ -173,7 +174,7 @@ chkerr = () ->
 	for c in @errorArray
 		if (hist[@keyTable[c]]  == undefined || hist[@keyTable[c]] < 2) && @keyClass[c] != ""
 			e = document.getElementById c
-			if e.parentElement != null
+			if e != null
 				e.parentElement.className = @keyClass[c]
 				@keyClass[c] = ""
 				@errorArray.splice @errorArray.indexOf(c),1

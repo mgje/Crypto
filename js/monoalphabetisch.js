@@ -30,6 +30,7 @@
       key = keys[_i];
       e = document.getElementById(key);
       e.setAttribute("value", this.keyTable[key]);
+      e.value = this.keyTable[key];
     }
     return false;
   };
@@ -228,7 +229,7 @@
       c = _ref[_k];
       if ((hist[this.keyTable[c]] === void 0 || hist[this.keyTable[c]] < 2) && this.keyClass[c] !== "") {
         e = document.getElementById(c);
-        if (e.parentElement !== null) {
+        if (e !== null) {
           e.parentElement.className = this.keyClass[c];
           this.keyClass[c] = "";
           this.errorArray.splice(this.errorArray.indexOf(c), 1);
