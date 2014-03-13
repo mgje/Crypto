@@ -199,13 +199,26 @@ chkuni = (k,v) ->
 
 rkey = () ->
 	keys = Object.keys @keyTable
-	v = keys.shuffle()
+	v = Object.keys @keyTable
+	v.shuffle()
 	
-	for i in [0..keys.length]
-		@keyTable[keys[i]] = v[i].toLocaleLowerCase()
+	for i in [0...keys.length]
+		c = v[i]
+		@keyTable[keys[i]] = c.toLocaleLowerCase()
 
+	@updateKeyForm()
 	@crypt()
 	false
+
+ckey = () ->
+	keys = Object.keys @keyTable
+	for i in [0...keys.length]
+		@keyTable[keys[i]] = ""
+
+	@updateKeyForm()
+	@crypt()
+	false
+
 
 exp = 
 	name : "Monoalphabetisch"
@@ -227,6 +240,7 @@ exp =
 	capitalize : capl
 	crypt : crpt
 	randomkey : rkey
+	clearkey : ckey
 
 exp.keyTable = 
 	"A" : ""
@@ -265,7 +279,7 @@ exp.createKeyTable()
 exp.updateKeyForm()
 exp.capitalize()
 exp.crypt()
-exp.randomkey()
+
 
 # Event Listener
 bt = document.getElementById "btn_crypt"
@@ -273,6 +287,18 @@ bt.onclick = (e) ->
 	exp.capitalize()
 	exp.crypt()
 	false 	
+
+bt = document.getElementById "btn_random"
+bt.onclick = (e) ->
+	exp.randomkey()
+	false 	
+
+bt = document.getElementById "btn_clear"
+bt.onclick = (e) ->
+	exp.clearkey()
+	false 	
+
+
 
 # Enter
 eform = document.getElementById "inputTxt"
