@@ -184,18 +184,17 @@ chkerr = () ->
 			 
 
 chkuni = (k,v) ->
-	if v != ""
-		keys = Object.keys @keyTable
-		values = (@keyTable[key] for key in keys)
-		@keyTable[k]=v
-		@updateKeyForm()
+	keys = Object.keys @keyTable
+	values = (@keyTable[key] for key in keys)
+	@keyTable[k]=v
+	@updateKeyForm()
 		
-		if values.indexOf(v) > -1 && v != " " && v != ""
-			@errorArray.push keys[values.indexOf v]
-			@errorArray.push k
-			@markField()
+	if values.indexOf(v) > -1 && v != " " && v != ""
+		@errorArray.push keys[values.indexOf v]
+		@errorArray.push k
+		@markField()
 		
-		@checkError()
+	@checkError()
 	false
 
 rkey = () ->
@@ -208,6 +207,7 @@ rkey = () ->
 		@keyTable[keys[i]] = c.toLocaleLowerCase()
 
 	@updateKeyForm()
+	@checkError()
 	@crypt()
 	false
 
@@ -217,6 +217,7 @@ ckey = () ->
 		@keyTable[keys[i]] = ""
 
 	@updateKeyForm()
+	@checkError()
 	@crypt()
 	false
 
@@ -318,7 +319,10 @@ e.onkeyup = (e) ->
 	src.value = src.value.toLocaleLowerCase()
 	if src.value.length > 1
 		src.value = src.value[0]
+	if src.value == " "
+		src.value = ""
 	exp.checkunique(src.id,src.value)
+	exp.crypt()
 
 
 

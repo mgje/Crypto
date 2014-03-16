@@ -208,18 +208,17 @@ chkerr = () ->
 			@checkError()
 	
 chkuni = (k,v) ->
-	if v != ""
-		keys = Object.keys @keyTable
-		values = (@keyTable[key] for key in keys)
-		@keyTable[k]=v
-		@updateKeyForm()
+	keys = Object.keys @keyTable
+	values = (@keyTable[key] for key in keys)
+	@keyTable[k]=v
+	@updateKeyForm()
 		
-		if values.indexOf(v) > -1 && v != " " && v != ""
-			@errorArray.push keys[values.indexOf v]
-			@errorArray.push k
-			@markField()
+	if values.indexOf(v) > -1 && v != " " && v != ""
+		@errorArray.push keys[values.indexOf v]
+		@errorArray.push k
+		@markField()
 		
-		@checkError()
+	@checkError()
 	false
 
 chist = () ->
@@ -416,7 +415,11 @@ e.onkeyup = (e) ->
 	src.value = src.value.toLocaleUpperCase()
 	if src.value.length > 1
 		src.value = src.value[0]
+	if src.value == " "
+		src.value = ""
 	exp.checkunique(src.id,src.value)
+	exp.decrypt()
+
 
 
 

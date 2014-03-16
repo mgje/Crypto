@@ -244,26 +244,24 @@
 
   chkuni = function(k, v) {
     var key, keys, values;
-    if (v !== "") {
-      keys = Object.keys(this.keyTable);
-      values = (function() {
-        var _i, _len, _results;
-        _results = [];
-        for (_i = 0, _len = keys.length; _i < _len; _i++) {
-          key = keys[_i];
-          _results.push(this.keyTable[key]);
-        }
-        return _results;
-      }).call(this);
-      this.keyTable[k] = v;
-      this.updateKeyForm();
-      if (values.indexOf(v) > -1 && v !== " " && v !== "") {
-        this.errorArray.push(keys[values.indexOf(v)]);
-        this.errorArray.push(k);
-        this.markField();
+    keys = Object.keys(this.keyTable);
+    values = (function() {
+      var _i, _len, _results;
+      _results = [];
+      for (_i = 0, _len = keys.length; _i < _len; _i++) {
+        key = keys[_i];
+        _results.push(this.keyTable[key]);
       }
-      this.checkError();
+      return _results;
+    }).call(this);
+    this.keyTable[k] = v;
+    this.updateKeyForm();
+    if (values.indexOf(v) > -1 && v !== " " && v !== "") {
+      this.errorArray.push(keys[values.indexOf(v)]);
+      this.errorArray.push(k);
+      this.markField();
     }
+    this.checkError();
     return false;
   };
 
@@ -277,6 +275,7 @@
       this.keyTable[keys[i]] = c.toLocaleLowerCase();
     }
     this.updateKeyForm();
+    this.checkError();
     this.crypt();
     return false;
   };
@@ -288,6 +287,7 @@
       this.keyTable[keys[i]] = "";
     }
     this.updateKeyForm();
+    this.checkError();
     this.crypt();
     return false;
   };
@@ -400,7 +400,11 @@
     if (src.value.length > 1) {
       src.value = src.value[0];
     }
-    return exp.checkunique(src.id, src.value);
+    if (src.value === " ") {
+      src.value = "";
+    }
+    exp.checkunique(src.id, src.value);
+    return exp.crypt();
   };
 
 }).call(this);
