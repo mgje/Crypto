@@ -330,16 +330,16 @@ nProb = () ->
 	maxN = @geheimnisse.length
 	ind = Math.floor Math.random()*maxN
 	e = clearAllChilds "inputTxt"
-	t = document.createTextNode @geheimnisse[ind]
-	e.appendChild t
-	#e.value = @geheimnisse[ind]
+	#t = document.createTextNode @geheimnisse[ind]
+	#e.appendChild t
+	e.value = @geheimnisse[ind]
 	@randomkey()
-	#e2 = document.getElementById "outputTxt"
-	#e = clearAllChilds "inputTxt"
+	e2 = document.getElementById "outputTxt"
+	e = clearAllChilds "inputTxt"
 	#t = document.createTextNode e2.innerText
 	#e.appendChild t
-	#e.value = e2.innerText
-	#@clearkey()
+	e.value = e2.innerText
+	@clearkey()
 	@lowerCase()
 	@decrypt()
 	@calchisto()
