@@ -437,7 +437,7 @@
     this.randomkey();
     e2 = document.getElementById("outputTxt");
     e = clearAllChilds("inputTxt");
-    if (e2.innerText !== null) {
+    if (e2.innerText !== void 0) {
       e.value = e2.innerText;
     } else {
       e.value = e2.textContent;
