@@ -437,7 +437,11 @@
     this.randomkey();
     e2 = document.getElementById("outputTxt");
     e = clearAllChilds("inputTxt");
-    e.value = e2.innerText;
+    if (e2.innerText !== null) {
+      e.value = e2.innerText;
+    } else {
+      e.value = e2.textContent;
+    }
     this.clearkey();
     this.lowerCase();
     this.decrypt();

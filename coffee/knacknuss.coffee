@@ -338,7 +338,10 @@ nProb = () ->
 	e = clearAllChilds "inputTxt"
 	#t = document.createTextNode e2.innerText
 	#e.appendChild t
-	e.value = e2.innerText
+	if e2.innerText != null
+		e.value = e2.innerText
+	else
+		e.value = e2.textContent
 	@clearkey()
 	@lowerCase()
 	@decrypt()
