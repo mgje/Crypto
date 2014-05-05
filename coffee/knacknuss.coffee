@@ -334,12 +334,12 @@ nProb = () ->
 	e.appendChild t
 	#e.value = @geheimnisse[ind]
 	@randomkey()
-	e2 = document.getElementById "outputTxt"
-	e = clearAllChilds "inputTxt"
-	t = document.createTextNode e2.innerText
-	e.appendChild t
-	e.value = e2.innerText
-	@clearkey()
+	#e2 = document.getElementById "outputTxt"
+	#e = clearAllChilds "inputTxt"
+	#t = document.createTextNode e2.innerText
+	#e.appendChild t
+	#e.value = e2.innerText
+	#@clearkey()
 	@lowerCase()
 	@decrypt()
 	@calchisto()

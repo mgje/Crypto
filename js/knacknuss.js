@@ -429,19 +429,13 @@
   };
 
   nProb = function() {
-    var e, e2, ind, maxN, t;
+    var e, ind, maxN, t;
     maxN = this.geheimnisse.length;
     ind = Math.floor(Math.random() * maxN);
     e = clearAllChilds("inputTxt");
     t = document.createTextNode(this.geheimnisse[ind]);
     e.appendChild(t);
     this.randomkey();
-    e2 = document.getElementById("outputTxt");
-    e = clearAllChilds("inputTxt");
-    t = document.createTextNode(e2.innerText);
-    e.appendChild(t);
-    e.value = e2.innerText;
-    this.clearkey();
     this.lowerCase();
     this.decrypt();
     this.calchisto();
