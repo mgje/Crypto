@@ -435,7 +435,6 @@
     e = clearAllChilds("inputTxt");
     t = document.createTextNode(this.geheimnisse[ind]);
     e.appendChild(t);
-    e.value = this.geheimnisse[ind];
     this.randomkey();
     e2 = document.getElementById("outputTxt");
     e = clearAllChilds("inputTxt");

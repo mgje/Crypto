@@ -332,7 +332,7 @@ nProb = () ->
 	e = clearAllChilds "inputTxt"
 	t = document.createTextNode @geheimnisse[ind]
 	e.appendChild t
-	e.value = @geheimnisse[ind]
+	#e.value = @geheimnisse[ind]
 	@randomkey()
 	e2 = document.getElementById "outputTxt"
 	e = clearAllChilds "inputTxt"
