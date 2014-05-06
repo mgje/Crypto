@@ -1,3 +1,4 @@
 name: Crypto
 exclude: ["*.coffee","test","*.sh","coffee","toDelete","README.md"]
 baseurl: /Crypto/
+markdown: kramdown
