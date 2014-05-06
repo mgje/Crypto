@@ -339,10 +339,11 @@ nProb = () ->
 	#t = document.createTextNode e2.innerText
 	#e.appendChild t
 
-	if e2.innerText != undefined
+	if e2.innerText 
 		e.value = e2.innerText
 	else
 		e.value = e2.textContent
+	# e.value = e2.innerHTML
 	@clearkey()
 	@lowerCase()
 	@decrypt()
