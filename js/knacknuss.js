@@ -654,7 +654,7 @@
     if (src.value === " ") {
       src.value = "";
     }
-    if (src.value.search(/[^a-z]+/) === -1) {
+    if (src.value.search(/[^A-Z]+/) === -1) {
       exp.checkunique(src.id, src.value);
       return exp.crypt();
     } else {
