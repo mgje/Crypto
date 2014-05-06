@@ -321,8 +321,13 @@ e.onkeyup = (e) ->
 		src.value = src.value[0]
 	if src.value == " "
 		src.value = ""
-	exp.checkunique(src.id,src.value)
-	exp.crypt()
+
+	if src.value.search(/[^a-z]+/) == -1
+		exp.checkunique(src.id,src.value)
+		exp.crypt()
+	else
+		src.value = ""
+
 
 
 
