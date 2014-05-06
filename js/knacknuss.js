@@ -654,8 +654,12 @@
     if (src.value === " ") {
       src.value = "";
     }
-    exp.checkunique(src.id, src.value);
-    return exp.decrypt();
+    if (src.value.search(/[^a-z]+/) === -1) {
+      exp.checkunique(src.id, src.value);
+      return exp.crypt();
+    } else {
+      return src.value = "";
+    }
   };
 
 }).call(this);
