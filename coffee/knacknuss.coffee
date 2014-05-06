@@ -338,6 +338,7 @@ nProb = () ->
 	e = clearAllChilds "inputTxt"
 	#t = document.createTextNode e2.innerText
 	#e.appendChild t
+	
 	if e2.innerText != undefined
 		e.value = e2.innerText
 	else
