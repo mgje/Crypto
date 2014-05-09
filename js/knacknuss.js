@@ -631,15 +631,16 @@
   eform = document.getElementById("inputTxt");
 
   eform.onkeypress = function(e) {
+    var savepos;
     if (!e) {
       e = window.event;
     }
-    if (e.keyCode === 13) {
-      exp.lowerCase();
-      exp.decrypt();
-      exp.calchisto();
-      return false;
-    }
+    savepos = e.currentTarget.selectionEnd;
+    exp.lowerCase();
+    exp.decrypt();
+    exp.calchisto();
+    e.currentTarget.selectionEnd = savepos;
+    return true;
   };
 
   e = document.getElementById("keytable");

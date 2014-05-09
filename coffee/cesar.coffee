@@ -222,13 +222,20 @@ bt.onclick = (e) ->
 
 # Enter
 eform = document.getElementById "inputTxt"
-eform.onkeypress = (e) ->
+eform.onkeydown = (e) ->
 	if !e
 		e = window.event
-	if e.keyCode ==13
-		exp.capitalize()
-		exp.crypt()
-		false
+	
+	# if e.keyCode ==13
+	# 	exp.capitalize()
+	# 	exp.crypt()
+	# 	false
+
+	savepos=e.currentTarget.selectionEnd
+	exp.capitalize()
+	exp.crypt()
+	e.currentTarget.selectionEnd=savepos
+	true
 
 
 

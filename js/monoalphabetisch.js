@@ -381,14 +381,15 @@
   eform = document.getElementById("inputTxt");
 
   eform.onkeypress = function(e) {
+    var savepos;
     if (!e) {
       e = window.event;
     }
-    if (e.keyCode === 13) {
-      exp.capitalize();
-      exp.crypt();
-      return false;
-    }
+    savepos = e.currentTarget.selectionEnd;
+    exp.capitalize();
+    exp.crypt();
+    e.currentTarget.selectionEnd = savepos;
+    return true;
   };
 
   e = document.getElementById("keytable");

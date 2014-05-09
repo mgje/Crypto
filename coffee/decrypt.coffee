@@ -402,11 +402,18 @@ eform = document.getElementById "inputTxt"
 eform.onkeypress = (e) ->
 	if !e
 		e = window.event
-	if e.keyCode ==13
-		exp.lowerCase()
-		exp.decrypt()
-		exp.calchisto()
-		false
+	# if e.keyCode ==13
+	# 	exp.lowerCase()
+	# 	exp.decrypt()
+	# 	exp.calchisto()
+	# 	false
+
+	savepos=e.currentTarget.selectionEnd
+	exp.lowerCase()
+	exp.decrypt()
+	exp.calchisto()
+	e.currentTarget.selectionEnd=savepos
+	true
 
 # Forms
 e = document.getElementById "keytable"
