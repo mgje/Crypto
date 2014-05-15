@@ -5,7 +5,7 @@ Crypto - Interaktive Verschlüsselung
 
 *[gleich Testen / Start](http://mgje.github.io/Crypto/exp7/)*
 
-*[Download für Offline Nutzung](http://mgje.github.io/Crypto/DOWNLOAD/M3_interaktiv_verschluesseln.zip)*
+*[Direkter Download Link für offline Nutzung](http://mgje.github.io/Crypto/DOWNLOAD/M3_interaktiv_verschluesseln.zip)*
 
 Die verschiedenen [interaktiven Webanwendungen zur Verschlüsselung](http://mgje.github.io/Crypto/exp1/) wurden für das Lehrmittel zum Biber-Wettbewerb
 entwickelt. Finanziert wurde dieses Entwicklungsprojekt durch ICT-Berufsbildung, die HaslerStiftung und SWITCH.
