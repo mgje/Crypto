@@ -11,6 +11,6 @@
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3, CoffeeScript, Github 
+    HTML5, CSS3, CoffeeScript, Bootstrap, markdown, Github 
 
 - BOOM -
