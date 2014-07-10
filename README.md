@@ -13,21 +13,30 @@ entwickelt. Finanziert wurde dieses Projekt durch ICT-Berufsbildung, die HaslerS
 Das [Informatik-Biber Lehrmittel](http://informatik-biber.ch/lehrmittel/) ist ein vom [SVIA](http://svia-ssie-ssii.ch/), dem Schweizerischen Verein für Informatik in der Ausbildung, initiiertes Projekt und hat die Förderung der Informatik auf der Sekundarstufe I zum Ziel.
 Das Lehrmittel bringt Jugendlichen Konzepte der Informatik näher und zeigt dadurch auf, dass Informatikberufe vielseitig und spannend sind. 
 
-Lehrpersonen der Sekundarstufe I und weiteren Interessierten steht das Lehrmittel kostenlos zur Verfügung.
+
+Lehrpersonen und weiteren Interessierten steht das [Lehrmittel](http://informatik-biber.ch/lehrmittel/) kostenlos zur Verfügung.
 
 
 ## Verwendete Technologien
 
-- [Raphaël](http://raphaeljs.com/) JavaScript Bibliothek für Vektorgrafik
-- [Web Starter Kit](https://developers.google.com/web/fundamentals/tools/)
+- [Bootstrap](http://getbootstrap.com/about/) Für die Darstellung der Icons und Knöpfe
+- [CoffeeScript](http://coffeescript.org/) *Python like*JavaScript Programmierung
+- [jekyll](http://jekyllrb.com/) *static site gererator*
+- [markdown](http://daringfireball.net/projects/markdown/) *Text to HTML conversion*
+- [Liquid](https://github.com/Shopify/liquid) *Template Engine*
+- [jQuerry](http://jquery.com/) Interaktion, Events und DOM
+- [Modernizr](http://modernizr.com/) Browser Version überprüfen
 
 
 ## Weiterführende Verweise
+- [Crypto Tool](http://www.cryptool-online.org/)
+- [Mini-AES](http://www.sagemath.org/doc/reference/sage/crypto/block_cipher/miniaes.html) 
+- [Simply-DES](http://www.sagemath.org/doc/reference/cryptography/sage/crypto/block_cipher/sdes.html)
 
-
-- folgen
-- [Ready Set Raphael](http://www.readysetraphael.com/)
-- [Filter Effects for Raphael.js](http://chrismichaelscott.github.io/fraphael/)
+###JavaScript
+- [JS Encrypt](http://www-cs-students.stanford.edu/~tjw/jsbn/)
+- [JS Encrpytion](https://github.com/mdp/gibberish-aes)
+- [crypto-js](https://code.google.com/p/crypto-js/)
 
 ## Creative-Commons Lizenz (CC BY 3.0 CH)
 
@@ -40,6 +49,4 @@ Sie dürfen:
 **Bearbeiten** - das Material remixen, verändern und darauf aufbauen und zwar für beliebige Zwecke, sogar kommerziell.
 
 ## TODO
-- tests
-- make it responsive and mobile
-- reduce and compress
+- nothing
