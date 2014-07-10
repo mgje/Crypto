@@ -13,7 +13,7 @@ entwickelt. Finanziert wurde dieses Projekt durch ICT-Berufsbildung, die HaslerS
 Das [Informatik-Biber Lehrmittel](http://informatik-biber.ch/lehrmittel/) ist ein vom [SVIA](http://svia-ssie-ssii.ch/), dem Schweizerischen Verein für Informatik in der Ausbildung, initiiertes Projekt und hat die Förderung der Informatik auf der Sekundarstufe I zum Ziel.
 Das Lehrmittel bringt Jugendlichen Konzepte der Informatik näher und zeigt dadurch auf, dass Informatikberufe vielseitig und spannend sind. 
 
-Lehrpersonen der Sekundarstufe I und weiteren Interessierten steht das Lehrmittel als Ressource zur Vor- und Nachbereitung des Wettbewerbs kostenlos zur Verfügung.
+Lehrpersonen der Sekundarstufe I und weiteren Interessierten steht das Lehrmittel kostenlos zur Verfügung.
 
 [Lehrmittel zum Informatik-Biber](http://informatik-biber.ch/musik/)
 
