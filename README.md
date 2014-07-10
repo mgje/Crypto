@@ -15,7 +15,6 @@ Das Lehrmittel bringt Jugendlichen Konzepte der Informatik näher und zeigt dadu
 
 Lehrpersonen der Sekundarstufe I und weiteren Interessierten steht das Lehrmittel kostenlos zur Verfügung.
 
-[Lehrmittel zum Informatik-Biber](http://informatik-biber.ch/musik/)
 
 ## Verwendete Technologien
 
