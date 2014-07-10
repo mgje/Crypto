@@ -7,7 +7,7 @@ Crypto - Interaktive Verschlüsselung
 
 *[Direkter Download Link für offline Nutzung](http://mgje.github.io/Crypto/DOWNLOAD/M3_interaktiv_verschluesseln.zip)*
 
-Die [Webanwendung](http://mgje.github.io/Crypto/exp1/) wurden für das Informatik-Biber Lehrmittel
+Die [Webanwendung](http://mgje.github.io/Crypto/exp1/) wurde für das Informatik-Biber Lehrmittel
 entwickelt. Finanziert wurde dieses Projekt durch ICT-Berufsbildung, die HaslerStiftung und SWITCH.
 
 Das [Lehrmittel zum Biber-Wettbewerb](http://informatik-biber.ch/musik/) ist ein vom [SVIA](http://svia-ssie-ssii.ch/), dem Schweizerischen Verein für Informatik in der Ausbildung, initiiertes Projekt und hat die Förderung der Informatik auf der Sekundarstufe I zum Ziel.
