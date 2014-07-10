@@ -11,7 +11,7 @@ Die [Webanwendung](http://mgje.github.io/Crypto/exp1/) wurde für das Informatik
 entwickelt. Finanziert wurde dieses Projekt durch ICT-Berufsbildung, die HaslerStiftung und SWITCH.
 
 Das [Informatik-Biber Lehrmittel](http://informatik-biber.ch/lehrmittel/) ist ein vom [SVIA](http://svia-ssie-ssii.ch/), dem Schweizerischen Verein für Informatik in der Ausbildung, initiiertes Projekt und hat die Förderung der Informatik auf der Sekundarstufe I zum Ziel.
-Das Lehrmittel bringt Jugendlichen Konzepte der Informatik näher und zeigt dadurch auf, dass Informatikberufe vielseitig und spannend sind. 
+Das Lehrmittel bringt Jugendlichen Konzepte der Informatik näher und zeigt dadurch, dass Informatikberufe vielseitig und spannend sind. 
 
 
 Lehrpersonen und weiteren Interessierten steht das [Lehrmittel](http://informatik-biber.ch/lehrmittel/) kostenlos zur Verfügung.
