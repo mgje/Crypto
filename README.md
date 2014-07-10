@@ -40,4 +40,6 @@ Sie dürfen:
 **Bearbeiten** - das Material remixen, verändern und darauf aufbauen und zwar für beliebige Zwecke, sogar kommerziell.
 
 ## TODO
-- nothing
+- tests
+- make it responsive and mobile
+- reduce and compress
