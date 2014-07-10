@@ -49,5 +49,4 @@ Sie dürfen:
 **Bearbeiten** - das Material remixen, verändern und darauf aufbauen und zwar für beliebige Zwecke, sogar kommerziell.
 
 ## TODO
-- Enter Taste im Textfeld als Zeichenumbruch interpretieren
-- Bei jedem neuen Zeichen interaktiv verschlüsseln
+- nothing
