@@ -19,6 +19,7 @@ Lehrpersonen der Sekundarstufe I und weiteren Interessierten steht das Lehrmitte
 ## Verwendete Technologien
 
 - [Raphaël](http://raphaeljs.com/) JavaScript Bibliothek für Vektorgrafik
+- [Web Starter Kit](https://developers.google.com/web/fundamentals/tools/)
 
 
 ## Weiterführende Verweise
