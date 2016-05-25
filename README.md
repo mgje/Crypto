@@ -3,11 +3,11 @@ Crypto - Interaktive Verschlüsselung
 
 **Verschlüsseln – damit geheime Daten  geheim bleiben**
 
-*[gleich Testen / Start](http://mgje.github.io/Crypto/exp7/)*
+*[gleich Testen / Start](https://mgje.github.io/Crypto/exp7/)* [https://mgje.github.io/Crypto/](https://mgje.github.io/Crypto/)
 
-*[Direkter Download Link für offline Nutzung](http://mgje.github.io/Crypto/DOWNLOAD/M3_interaktiv_verschluesseln.zip)*
+*[Direkter Download Link für offline Nutzung](https://mgje.github.io/Crypto/DOWNLOAD/M3_interaktiv_verschluesseln.zip)*
 
-Die [Webanwendung](http://mgje.github.io/Crypto/exp1/) wurde für das Informatik-Biber Lehrmittel
+Die [Webanwendung](https://mgje.github.io/Crypto/exp1/) wurde für das Informatik-Biber Lehrmittel
 entwickelt. Finanziert wurde dieses Projekt durch ICT-Berufsbildung, die HaslerStiftung und SWITCH.
 
 Das [Informatik-Biber Lehrmittel](http://informatik-biber.ch/lehrmittel/) ist ein vom [SVIA](http://svia-ssie-ssii.ch/), dem Schweizerischen Verein für Informatik in der Ausbildung, initiiertes Projekt und hat die Förderung der Informatik auf der Sekundarstufe I zum Ziel.
