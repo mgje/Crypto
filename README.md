@@ -3,17 +3,19 @@ Crypto - Interaktive Verschlüsselung
 
 **Verschlüsseln – damit geheime Daten  geheim bleiben**
 
-*[gleich Testen / Start](http://mgje.github.io/Crypto/exp7/)*
+*[gleich Testen --> ](https://mgje.github.io/Crypto/exp7/)* [https://mgje.github.io/Crypto/](https://mgje.github.io/Crypto/)
 
-Die verschiedenen [interaktiven Webanwendungen zur Verschlüsselung](http://mgje.github.io/Crypto/exp1/) wurden für das Lehrmittel zum Biber-Wettbewerb
-entwickelt. Finanziert wurde dieses Entwicklungsprojekt durch ICT-Berufsbildung, die HaslerStiftung und SWITCH.
+*[Direkter Download Link für offline Nutzung](https://mgje.github.io/Crypto/DOWNLOAD/M3_interaktiv_verschluesseln.zip)*
 
-Das [Lehrmittel zum Biber-Wettbewerb](http://informatik-biber.ch/musik/) ist ein vom [SVIA](http://svia-ssie-ssii.ch/), dem Schweizerischen Verein für Informatik in der Ausbildung, initiiertes Projekt und hat die Förderung der Informatik auf der Sekundarstufe I zum Ziel.
-Das Lehrmittel bringt Jugendlichen auf niederschwellige Weise Konzepte der Informatik näher und zeigt dadurch auf, dass die Informatikbranche vielseitige und spannende Berufsperspektiven bietet.
+Die [Webanwendung](https://mgje.github.io/Crypto/exp1/) wurde für das Informatik-Biber Lehrmittel
+entwickelt. Finanziert wurde dieses Projekt durch ICT-Berufsbildung, die HaslerStiftung und SWITCH.
 
-Lehrpersonen der Sekundarstufe I und weiteren Interessierten steht das Lehrmittel als Ressource zur Vor- und Nachbereitung des Wettbewerbs kostenlos zur Verfügung.
+Das [Informatik-Biber Lehrmittel](http://informatik-biber.ch/lehrmittel/) ist ein vom [SVIA](http://svia-ssie-ssii.ch/), dem Schweizerischen Verein für Informatik in der Ausbildung, initiiertes Projekt und hat die Förderung der Informatik auf der Sekundarstufe I zum Ziel.
+Das Lehrmittel bringt Jugendlichen Konzepte der Informatik näher und zeigt dadurch, dass Informatikberufe vielseitig und spannend sind. 
 
-[Lehrmittel zum Informatik-Biber](http://informatik-biber.ch/musik/)
+
+Lehrpersonen und weiteren Interessierten steht das [Lehrmittel](http://informatik-biber.ch/lehrmittel/) kostenlos zur Verfügung.
+
 
 ## Verwendete Technologien
 
@@ -47,5 +49,4 @@ Sie dürfen:
 **Bearbeiten** - das Material remixen, verändern und darauf aufbauen und zwar für beliebige Zwecke, sogar kommerziell.
 
 ## TODO
-- Enter Taste im Textfeld als Zeichenumbruch interpretieren
-- Bei jedem neuen Zeichen interaktiv verschlüsseln
+- nothing

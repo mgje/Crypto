@@ -3,6 +3,7 @@ layout: info
 title: Hilfe
 class: guide
 ---
+
 ## Verschlüsselte Texte
 
 ### Geheimnis 1 (einfach)
