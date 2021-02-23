@@ -438,7 +438,7 @@
     e2 = document.getElementById("outputTxt");
     e = clearAllChilds("inputTxt");
     if (e2.innerText) {
-      e.value = e2.innerText;
+      e.value = e2.innerText.replaceAll('\n','');
     } else {
       e.value = e2.textContent;
     }
